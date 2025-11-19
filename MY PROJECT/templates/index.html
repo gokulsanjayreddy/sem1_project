@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page user</title>
+</head>
+<div class="loader"></div> 
+<body id="lp">
+<div class="inputbox">
+    <div >
+    <h1>START LEARNING!</h1>
+    </div>
+    <form  action="{{url_for('username')}}" method="POST">
+    <input type="text" name="username" placeholder="Enter your name">
+    <button type="submit">proceed</button>
+</form>
+</div>
+</body>
+</html>
